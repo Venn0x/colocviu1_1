@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="North" />
+        android:text="North"
+        android:id="@+id/north_button"/>
 
 
     <LinearLayout
@@ -20,12 +21,14 @@
         <Button
             android:layout_width="104dp"
             android:layout_height="wrap_content"
-            android:text="East" />
+            android:text="East"
+            android:id="@+id/east_button"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="West" />
+            android:text="West"
+            android:id="@+id/west_button"/>
 
 
     </LinearLayout>
@@ -34,14 +37,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="South" />
+        android:text="South"
+        android:id="@+id/south_button"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="North, East, South, West"
+        android:text=", "
         android:layout_column="0"
         android:layout_row="0"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:id="@+id/text_buttons"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button presses: 0"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/button_presses"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Navigate to secondary activity"
+        android:id="@+id/go_to_secondary_act"/>
 
 </LinearLayout>
