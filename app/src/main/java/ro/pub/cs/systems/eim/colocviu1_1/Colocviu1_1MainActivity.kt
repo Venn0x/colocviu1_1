@@ -1,5 +1,6 @@
 package ro.pub.cs.systems.eim.colocviu1_1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -83,8 +84,10 @@ class Colocviu1_1MainActivity : AppCompatActivity() {
 
         }
 
-        findViewById<Button>(R.id.south_button).setOnClickListener {
-
+        findViewById<Button>(R.id.go_to_secondary_act).setOnClickListener {
+            val intent = Intent(this, Colocviu1_1SecondaryActivity::class.java)
+            intent.putExtra("presses", findViewById<TextView>(R.id.button_presses).text.toString())
+            startActivity(intent)
 
         }
 
